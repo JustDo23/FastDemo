@@ -1,4 +1,15 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.getkeepsafe.dexcount'// https://github.com/KeepSafe/dexcount-gradle-plugin
+
+buildscript {
+  repositories {
+    mavenCentral() // or jcenter()
+  }
+
+  dependencies {
+    classpath 'com.getkeepsafe.dexcount:dexcount-gradle-plugin:0.6.4'
+  }
+}
 
 android {
   compileSdkVersion 25
