@@ -104,6 +104,31 @@ public class StartFromBrowserActivity extends AppCompatActivity {
 
   @OnClick(R.id.bt_start_browser)
   public void onClick() {
-
+    startBrowserByLocal();
   }
+
+  /**
+   * 启动浏览器
+   */
+  private void startBrowser() {
+    Intent intent = new Intent();
+    intent.setAction("android.intent.action.VIEW");
+    intent.setData(Uri.parse("https://www.baidu.com"));
+    if (intent.resolveActivity(getPackageManager()) != null) {// 添加没有的判断防止崩溃
+      startActivity(intent);
+    }
+  }
+
+  /**
+   * 启动浏览器[本地文件]
+   */
+  private void startBrowserByLocal() {
+    Intent intent = new Intent();
+    intent.setAction("android.intent.action.VIEW");
+    intent.setData(Uri.parse("file:///sdcard/JustDo23/html/Just.html"));// 指定本地的数据源
+    intent.addCategory("android.intent.category.BROWSABLE");// 可以没有
+    intent.setClassName("com.android.browser", "com.android.browser.BrowserActivity");// 指定启动原生的浏览器[没有就启动不了浏览器]
+    startActivity(intent);
+  }
+
 }

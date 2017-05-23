@@ -123,34 +123,48 @@
    }
    ```
 
-   **注意：**这种方式是直接对从 `xml` 中获取到的启动字符串进行拆分截取从而获取到想要的数据，如果该串中包含了一个 `url` 的参数需要进行 **URL 编码** 否则解析会出现异常。
+   **注意：** 这种方式是直接对从 `xml` 中获取到的启动字符串进行拆分截取从而获取到想要的数据，如果该串中包含了一个 `url` 的参数需要进行 **URL 编码** 否则解析会出现异常。
 
 
 ### 02. APP 启动浏览器 
 
+1. 基础的启动网络地址
 
+   ```java
+   /**
+    * 启动浏览器
+    */
+   private void startBrowser() {
+     Intent intent = new Intent();
+     intent.setAction("android.intent.action.VIEW");
+     intent.setData(Uri.parse("https://www.baidu.com"));
+     startActivity(intent);
+   }
+   ```
 
+2. 启动原生浏览器并指定本地文件
 
+   ```java
+   /**
+    * 启动浏览器[本地文件]
+    */
+   private void startBrowserByLocal() {
+     Intent intent = new Intent();
+     intent.setAction("android.intent.action.VIEW");
+     intent.setData(Uri.parse("file:///sdcard/JustDo23/html/Just.html"));// 指定本地的数据源
+     intent.addCategory("android.intent.category.BROWSABLE");// 可以没有
+     intent.setClassName("com.android.browser", "com.android.browser.BrowserActivity");// 指定启动原生的浏览器[没有就启动不了浏览器]
+     startActivity(intent);
+   }
+   ```
 
+3. **注意**：如果设备上没有可接收隐式 Intent 的应用，您的应用将在调用 `startActivity()` 时崩溃。
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   ```java
+   if (intent.resolveActivity(getPackageManager()) != null) {// 添加没有的判断防止崩溃
+     startActivity(intent);
+   }
+   ```
 
 
 
