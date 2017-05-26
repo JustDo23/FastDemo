@@ -2,9 +2,11 @@
 
 > 引言：这些知识点都比较简单了，感觉是强迫症在驱使着写下笔记。
 >
-> 时间：
+> 时间：2017年05月23日
 >
 > 作者：JustDo23
+>
+> Github：[https://github.com/JustDo23/FastDemo](https://github.com/JustDo23/FastDemo)
 
 ### 01. 浏览器启动 APP
 
@@ -166,5 +168,11 @@
    }
    ```
 
+
+### 03. 拓展
+
+1. **DeepLink**
+2. **App Links** [官方教程](https://developer.android.com/training/app-links/index.html)
+3. **App Indexing**
 
 
