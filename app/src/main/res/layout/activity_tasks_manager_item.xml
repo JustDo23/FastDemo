@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical">
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <Button
+      android:id="@+id/bt_task_action"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true"
+      android:text="Start"
+      android:textColor="@android:color/black"
+      android:textSize="14sp" />
+
+    <TextView
+      android:id="@+id/tv_task_name"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_toLeftOf="@id/bt_task_action"
+      android:textColor="@color/colorAccent"
+      android:textSize="16sp"
+      tools:text="123" />
+
+    <TextView
+      android:id="@+id/tv_task_status"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/tv_task_name"
+      android:layout_marginTop="5dp"
+      android:layout_toLeftOf="@id/bt_task_action"
+      android:textColor="@android:color/secondary_text_dark"
+      android:textSize="16sp"
+      tools:text="status: connected" />
+
+  </RelativeLayout>
+
+  <ProgressBar
+    android:id="@+id/pb_task"
+    style="?android:attr/progressBarStyleHorizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+</LinearLayout>
+

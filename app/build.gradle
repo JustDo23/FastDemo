@@ -36,10 +36,13 @@ dependencies {
     exclude group: 'com.android.support', module: 'support-annotations'
   })
   compile 'com.android.support:appcompat-v7:25.3.1'
+  compile 'com.android.support:recyclerview-v7:25.3.1'
   testCompile 'junit:junit:4.12'
 
   compile 'com.jakewharton:butterknife:8.6.0'// butter knife
   annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'// http://jakewharton.github.io/butterknife
 
   compile 'com.just:utils-lib:1.0.0'// some utils
+
+  compile 'com.liulishuo.filedownloader:library:1.5.1'// 流利说文件下载
 }
