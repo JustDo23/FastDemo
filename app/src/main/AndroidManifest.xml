@@ -47,6 +47,8 @@
 
     <activity android:name=".module.media.SurfaceMediaActivity" />
     <activity android:name=".module.file.FileActivity" />
+    <activity android:name=".module.file.MonitorExternalStorageActivity" />
+    <activity android:name=".module.file.PicToExternalStorageActivity" />
 
   </application>
 
