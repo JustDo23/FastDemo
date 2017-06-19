@@ -50,6 +50,7 @@
     <activity android:name=".module.file.FileActivity" />
     <activity android:name=".module.file.MonitorExternalStorageActivity" />
     <activity android:name=".module.file.PicToExternalStorageActivity" />
+    <activity android:name=".module.file.FileInternalActivity" />
     <!-- 流利说文件下载 -->
     <activity android:name=".module.download.TasksIndexActivity" />
     <activity android:name=".module.download.TasksManagerActivity" />
