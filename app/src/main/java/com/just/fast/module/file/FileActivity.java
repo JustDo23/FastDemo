@@ -43,14 +43,15 @@ public class FileActivity extends AppCompatActivity {
     // 通过 Context 获取内部存储路径
     LogUtils.e("context.getFilesDir() = " + context.getFilesDir());// [ /data/data/com.just.fast/files ]
     LogUtils.e("context.getCacheDir() = " + context.getCacheDir());// [ /data/data/com.just.fast/cache ]
+    LogUtils.e("context.getDir(dirName, MODE_PRIVATE) = " + context.getDir("dirName", MODE_PRIVATE));// [ /data/data/com.just.fast/app_dirName ]
     // 获取外部存储根路径[先判断外部存储是否挂载][读写文件需要权限]
     LogUtils.e("Environment.getExternalStorageState() = " + Environment.getExternalStorageState());// [ mounted ]
     LogUtils.e("Environment.getExternalStorageDirectory() = " + Environment.getExternalStorageDirectory());// [ /storage/emulated/0 ]
-    // [不建议在外部存储根目录操作][因此获取外部存储私有路径][不需要权限]
+    // [不建议在外部存储根目录操作][因此获取外部存储私有路径][不需要权限][私有文件]
     LogUtils.e("context.getExternalFilesDir(null) = " + context.getExternalFilesDir(null));// [ /storage/emulated/0/Android/data/com.just.fast/files ]
     LogUtils.e("context.getExternalFilesDir(Environment.DIRECTORY_MOVIES) = " + context.getExternalFilesDir(Environment.DIRECTORY_MOVIES));// [ /storage/emulated/0/Android/data/com.just.fast/files/Movies ]
     LogUtils.e("context.getExternalCacheDir() = " + context.getExternalCacheDir());// [ /storage/emulated/0/Android/data/com.just.fast/cache ]
-    // [不建议在外部存储根目录操作][因此获取外部存储共享路径][读写文件需要权限]
+    // [不建议在外部存储根目录操作][因此获取外部存储共享路径][读写文件需要权限][公共文件]
     LogUtils.e("Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_MUSIC) = " + Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_MUSIC));// [ /storage/emulated/0/Music ]
 
     // 其他路径[获取系统根路径下的相关路径]
