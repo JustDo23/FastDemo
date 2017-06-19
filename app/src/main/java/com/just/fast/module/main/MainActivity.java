@@ -1,7 +1,9 @@
-package com.just.fast;
+package com.just.fast.module.main;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.just.fast.R;
 
 public class MainActivity extends AppCompatActivity {
 
