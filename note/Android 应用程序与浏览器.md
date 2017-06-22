@@ -172,7 +172,9 @@
 ### 03. 拓展
 
 1. **DeepLink**
-2. **App Links** [官方教程](https://developer.android.com/training/app-links/index.html)
+2. **App Links**
 3. **App Indexing**
+4. [Google Handling App Links](https://developer.android.com/training/app-links/index.html)
+5. [Google Add Android App Links](https://developer.android.com/studio/write/app-link-indexing.html)
 
 
