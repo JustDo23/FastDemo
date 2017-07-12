@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:padding="16dp">
+
+  <ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:srcCompat="@drawable/vector_rectangle" />
+
+  <ImageView
+    android:id="@+id/iv_vector"
+    android:layout_width="60dp"
+    android:layout_height="60dp" />
+
+  <Button
+    android:layout_width="70dp"
+    android:layout_height="70dp"
+    android:layout_marginTop="260dp"
+    android:background="@drawable/selector_vector_bt" />
+
+  <RadioButton
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:button="@drawable/selector_vector_bt_radio" />
+
+  <ImageView
+    android:id="@+id/iv_anim"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:contentDescription="@string/animated" />
+
+</RelativeLayout>

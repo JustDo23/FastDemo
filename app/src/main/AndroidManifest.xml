@@ -54,7 +54,8 @@
     <!-- 流利说文件下载 -->
     <activity android:name=".module.download.TasksIndexActivity" />
     <activity android:name=".module.download.TasksManagerActivity" />
-
+    <!-- vector -->
+    <activity android:name=".module.vector.VectorActivity" />
   </application>
 
 </manifest>
