@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+  android:width="100dp"
+  android:height="100dp"
+  android:viewportHeight="100.0"
+  android:viewportWidth="100.0">
+
+  <!-- 小箭头 -->
+  <group android:name="small_arrow">
+    <path
+      android:fillColor="@color/colorPrimary"
+      android:pathData="M0,0 L50,50 L100,0" />
+  </group>
+
+  <!-- 大箭头 -->
+  <group android:name="big_arrow">
+    <path
+      android:fillColor="@android:color/black"
+      android:pathData="M20,40 L0,40 v7 h20 v10 L30,43 l-10,-13" />
+  </group>
+
+  <!-- 大三角 -->
+  <group android:name="big_triangle">
+    <path
+      android:fillColor="#FF000000"
+      android:pathData="M9.01,14 L2,14 v2 h7.01 v3 L13,15 l-3.99,-4 v3" />
+  </group>
+
+  <!-- 二阶贝塞尔曲线 -->
+  <group android:name="bezier_quadratic">
+    <path
+      android:fillColor="@android:color/holo_blue_bright"
+      android:pathData="M0,100 Q30,30 50,50" />
+  </group>
+
+  <!-- 三阶贝塞尔曲线 -->
+  <group android:name="bezier_cubic">
+    <path
+      android:pathData="M0,100 C20,90 60,70 50,50 "
+      android:strokeColor="@android:color/holo_green_light"
+      android:strokeWidth="1" />
+  </group>
+
+  <!-- 椭圆 -->
+  <group android:name="ellipse">
+    <path
+      android:pathData="M70,60 a20,8 0 1 0 1,0"
+      android:strokeColor="@android:color/holo_red_light"
+      android:strokeWidth="1" />
+    <!-- X轴选择90度-->
+    <path
+      android:pathData="M70,60 a20,8 90 1 0 1,0"
+      android:strokeColor="@android:color/holo_green_light"
+      android:strokeWidth="1" />
+    <!-- 顺时针-->
+    <path
+      android:pathData="M70,60 a20,8 90 1 1 1,0"
+      android:strokeColor="@android:color/holo_orange_dark"
+      android:strokeWidth="1" />
+    <!-- 部分-->
+    <path
+      android:pathData="M70,60 a20,8 90 1 0 20,0"
+      android:strokeColor="@color/colorPrimary"
+      android:strokeWidth="1" />
+    <!-- 部分-->
+    <path
+      android:pathData="M70,60 a20,8 90 1 0 0,40"
+      android:strokeColor="@android:color/black"
+      android:strokeWidth="1" />
+  </group>
+
+</vector>

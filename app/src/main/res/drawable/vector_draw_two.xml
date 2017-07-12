@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+  android:width="120dp"
+  android:height="240dp"
+  android:viewportHeight="240.0"
+  android:viewportWidth="120.0">
+
+  <group android:name="top_left">
+    <path
+      android:pathData="M10,10 L50,50 M50,10 L10,50"
+      android:strokeColor="@color/colorPrimary"
+      android:strokeWidth="5" />
+  </group>
+
+  <group android:name="top_right">
+    <path
+      android:pathData="M70,10 L110,50 M110,10 L70,50"
+      android:strokeColor="@color/colorPrimary"
+      android:strokeLineCap="round"
+      android:strokeWidth="5" />
+  </group>
+
+  <group android:name="bottom_left">
+    <path
+      android:pathData="M10,70 L50,110 M50,70 L10,110"
+      android:strokeColor="@color/colorPrimary"
+      android:strokeLineJoin="round"
+      android:strokeWidth="5" />
+  </group>
+
+  <group android:name="bottom_right">
+    <path
+      android:pathData="M70,70 L110,110 M110,70 L70,110"
+      android:strokeColor="@color/colorPrimary"
+      android:strokeLineCap="round"
+      android:strokeLineJoin="round"
+      android:strokeWidth="5" />
+    <clip-path
+      android:name="clip"
+      android:pathData="M70,70 h20 v20 h-20 v-20" />
+  </group>
+
+  <group
+    android:name="attribute"
+    android:scaleX="2"
+    android:scaleY="1.1"
+    android:translateX="10"
+    android:translateY="-10">
+    <path
+      android:pathData="M10,130 L50,170 M50,130 L10,170"
+      android:strokeColor="@color/colorPrimary"
+      android:strokeWidth="5" />
+  </group>
+
+  <group android:name="top_left">
+    <path
+      android:pathData="M10,190 L50,230 M50,190 L10,230"
+      android:strokeColor="@color/colorPrimary"
+      android:strokeWidth="5"
+      android:trimPathEnd="0.9"
+      android:trimPathOffset="0.8"
+      android:trimPathStart="0.1" />
+  </group>
+
+</vector>

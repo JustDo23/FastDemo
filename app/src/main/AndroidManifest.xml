@@ -56,6 +56,7 @@
     <activity android:name=".module.download.TasksManagerActivity" />
     <!-- vector -->
     <activity android:name=".module.vector.VectorActivity" />
+    <activity android:name=".module.vector.VectorDrawActivity" />
   </application>
 
 </manifest>
