@@ -58,6 +58,7 @@
     <activity android:name=".module.vector.VectorActivity" />
     <activity android:name=".module.vector.VectorDrawActivity" />
     <activity android:name=".module.custom.CustomLayoutActivity" />
+    <activity android:name=".module.vector.VectorAnimActivity" />
   </application>
 
 </manifest>
