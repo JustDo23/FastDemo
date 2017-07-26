@@ -46,4 +46,6 @@ dependencies {
   compile 'com.just:utils-lib:1.0.0'// some utils
 
   compile 'com.liulishuo.filedownloader:library:1.5.1'// 流利说文件下载
+
+  compile 'com.github.PhilJay:MPAndroidChart:v3.0.2'// 图表 MP Android Chart
 }
