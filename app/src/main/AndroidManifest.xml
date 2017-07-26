@@ -66,6 +66,8 @@
     <activity android:name=".module.recorder.MediaRecorderAudioActivity" />
     <!-- MP Chart -->
     <activity android:name=".module.chart.LineChartActivity" />
+    <!-- 内容提供者 -->
+    <activity android:name=".module.contentprovider.ContentProviderActivity"/>
 
     <receiver
       android:name=".module.broadcast.CustomReceiver"
