@@ -3,4 +3,15 @@
   <color name="colorPrimary">#3F51B5</color>
   <color name="colorPrimaryDark">#303F9F</color>
   <color name="colorAccent">#FF4081</color>
+
+  <color name="Magenta">#FF00FF</color>
+  <color name="Violet">#EE82EE</color>
+  <color name="Plum">#DDA0DD</color>
+  <color name="Orchid">#DA70D6</color>
+  <color name="MediumOrchid">#BA55D3</color>
+  <color name="DarkOrchid">#9932CC</color>
+  <color name="DarkViolet">#9400D3</color>
+  <color name="BlueViolet">#8A2BE2</color>
+  <color name="Purple">#A020F0</color>
+  <color name="MediumPurple">#9370DB</color>
 </resources>
