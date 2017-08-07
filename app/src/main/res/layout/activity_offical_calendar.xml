@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+      android:id="@+id/bt_read_calendar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Read Calendar"
+      android:textAllCaps="false" />
+
+    <Button
+      android:id="@+id/bt_update_calendar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:text="Update Calendar"
+      android:textAllCaps="false" />
+
+    <Button
+      android:id="@+id/bt_insert_event"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:text="Insert Event"
+      android:textAllCaps="false" />
+
+    <Button
+      android:id="@+id/bt_update_event"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:text="Update Event"
+      android:textAllCaps="false" />
+
+    <Button
+      android:id="@+id/bt_delete_event"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:text="Delete Event"
+      android:textAllCaps="false" />
+
+    <Button
+      android:id="@+id/bt_add_attendees"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:text="Add Attendees"
+      android:textAllCaps="false" />
+
+    <Button
+      android:id="@+id/bt_add_reminders"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:text="Add Reminders"
+      android:textAllCaps="false" />
+
+    <Button
+      android:id="@+id/bt_query_instances"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:text="Query Instances"
+      android:textAllCaps="false" />
+
+    <Button
+      android:id="@+id/bt_intent_start"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:text="Intent Start"
+      android:textAllCaps="false" />
+
+    <Button
+      android:id="@+id/bt_intent_edit"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:text="Intent Edit"
+      android:textAllCaps="false" />
+
+    <Button
+      android:id="@+id/bt_intent_calendar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:text="Intent Calendar"
+      android:textAllCaps="false" />
+
+    <Button
+      android:id="@+id/bt_intent_event"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:text="Intent Event"
+      android:textAllCaps="false" />
+
+  </LinearLayout>
+
+</ScrollView>
+
+
