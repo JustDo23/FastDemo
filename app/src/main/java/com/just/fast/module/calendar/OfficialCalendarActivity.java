@@ -99,6 +99,12 @@ public class OfficialCalendarActivity extends AppCompatActivity implements View.
         }
         break;
       case R.id.bt_update_calendar:// 更新信息
+        long updateCalendarID = 1;
+        ContentValues updateValues = new ContentValues();
+        updateValues.put(CalendarContract.Calendars.VISIBLE, "1");
+        Uri updateUri = ContentUris.withAppendedId(CalendarContract.Calendars.CONTENT_URI, updateCalendarID);
+        int rows = getContentResolver().update(updateUri, updateValues, null, null);
+        ToastUtil.showShortToast(this, "rows = " + rows);
         break;
       case R.id.bt_insert_event:// 插入事件
         long calendarID = 1;
