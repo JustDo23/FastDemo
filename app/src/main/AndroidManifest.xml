@@ -82,6 +82,7 @@
     <activity android:name=".module.calendar.LoadersActivity" />
     <!-- Widget -->
     <activity android:name=".module.widget.WebViewActivity" />
+    <activity android:name=".module.widget.EmptyRecyclerViewActivity" />
 
     <receiver
       android:name=".module.broadcast.CustomReceiver"

@@ -28,6 +28,7 @@ import com.just.fast.module.vector.VectorActivity;
 import com.just.fast.module.vector.VectorAnimActivity;
 import com.just.fast.module.vector.VectorDrawActivity;
 import com.just.fast.module.vlayout.VirtualLayoutActivity;
+import com.just.fast.module.widget.EmptyRecyclerViewActivity;
 import com.just.fast.module.widget.WebViewActivity;
 
 import java.util.ArrayList;
@@ -135,6 +136,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     contentMap.put(11, contentList11);
     List<String> contentList12 = new ArrayList<>();
     contentList12.add("网页");
+    contentList12.add("RecyclerView 为空控件");
     contentMap.put(12, contentList12);
   }
 
@@ -207,6 +209,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         break;
       case "网页":
         startActivity(new Intent(this, WebViewActivity.class));
+        break;
+      case "RecyclerView 为空控件":
+        startActivity(new Intent(this, EmptyRecyclerViewActivity.class));
         break;
     }
   }
