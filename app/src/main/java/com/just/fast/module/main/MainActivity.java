@@ -28,6 +28,7 @@ import com.just.fast.module.vector.VectorActivity;
 import com.just.fast.module.vector.VectorAnimActivity;
 import com.just.fast.module.vector.VectorDrawActivity;
 import com.just.fast.module.vlayout.VirtualLayoutActivity;
+import com.just.fast.module.widget.WebViewActivity;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -80,6 +81,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     titleList.add("日历事件提醒");
     titleList.add("Library");
     titleList.add("意图");
+    titleList.add("控件");
   }
 
   /**
@@ -131,6 +133,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     List<String> contentList11 = new ArrayList<>();
     contentList11.add("启动系统文件管理");
     contentMap.put(11, contentList11);
+    List<String> contentList12 = new ArrayList<>();
+    contentList12.add("网页");
+    contentMap.put(12, contentList12);
   }
 
   @Override
@@ -199,6 +204,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         break;
       case "启动系统文件管理":
         startSystemFile();
+        break;
+      case "网页":
+        startActivity(new Intent(this, WebViewActivity.class));
         break;
     }
   }

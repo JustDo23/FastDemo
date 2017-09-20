@@ -80,6 +80,8 @@
     <activity android:name=".module.calendar.CalendarActivity" />
     <activity android:name=".module.calendar.OfficialCalendarActivity" />
     <activity android:name=".module.calendar.LoadersActivity" />
+    <!-- Widget -->
+    <activity android:name=".module.widget.WebViewActivity" />
 
     <receiver
       android:name=".module.broadcast.CustomReceiver"
