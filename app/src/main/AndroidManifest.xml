@@ -83,6 +83,7 @@
     <!-- Widget -->
     <activity android:name=".module.widget.WebViewActivity" />
     <activity android:name=".module.widget.EmptyRecyclerViewActivity" />
+    <activity android:name=".module.widget.ViewStubActivity" />
 
     <receiver
       android:name=".module.broadcast.CustomReceiver"
