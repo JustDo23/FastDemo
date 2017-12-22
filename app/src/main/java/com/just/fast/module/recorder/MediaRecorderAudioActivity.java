@@ -3,8 +3,10 @@ package com.just.fast.module.recorder;
 import android.Manifest;
 import android.content.Context;
 import android.content.pm.PackageManager;
+import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.MediaRecorder;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
@@ -79,7 +81,7 @@ public class MediaRecorderAudioActivity extends AppCompatActivity {
 
   private void startRecording() {
     mediaRecorder = new MediaRecorder();
-    mediaRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
+    mediaRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);// MediaRecorder.AudioSource.VOICE_RECOGNITION
     mediaRecorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
     mediaRecorder.setOutputFile(mFileName);
     mediaRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB);
@@ -198,6 +200,22 @@ public class MediaRecorderAudioActivity extends AppCompatActivity {
         mStartPlaying = !mStartPlaying;
       }
     };
+  }
+
+
+  /**
+   * 测试防止噪音
+   */
+  private void testNoiseSuppression() {
+    AudioManager audioManager = (AudioManager) getSystemService(AUDIO_SERVICE);
+    audioManager.setMode(AudioManager.MODE_IN_CALL);
+    audioManager.setParameters("noise_suppression=on");
+    if (Build.VERSION.SDK_INT > Build.VERSION_CODES.JELLY_BEAN) {
+      // https://stackoverflow.com/questions/19527810/using-mediarecorder-and-noisesuppressor-in-android
+    }
+
+    // https://stackoverflow.com/questions/6959930/android-need-to-record-mic-input
+    // https://twigstechtips.blogspot.hk/2013/07/android-enable-noise-cancellation-in.html
   }
 
 
