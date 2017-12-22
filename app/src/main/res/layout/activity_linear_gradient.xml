@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <com.just.fast.module.view.LinearGradientView
+    android:layout_width="match_parent"
+    android:layout_height="40dp" />
+
+  <!--<com.just.fast.module.view.ShimmerTextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="娃哈哈娃哈哈娃哈哈" />-->
+
+  <com.just.fast.module.view.LinearGradientLayout
+    android:id="@+id/lgl_test"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:layout_marginTop="20dp"
+    android:visibility="gone" />
+
+  <Button
+    android:id="@+id/bt_control"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:text="start"
+    android:textAllCaps="false" />
+
+  <Button
+    android:id="@+id/bt_display"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:text="show"
+    android:textAllCaps="false" />
+
+</LinearLayout>
