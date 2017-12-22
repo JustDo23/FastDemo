@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/activity_table_layout_one"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/Violet"
+    android:stretchColumns="1">
+
+    <TableRow>
+
+      <TextView
+        android:padding="3dip"
+        android:text="标题一" />
+
+      <TextView
+        android:gravity="right"
+        android:padding="3dip"
+        android:text="标题二" />
+
+    </TableRow>
+
+    <TableRow>
+
+      <TextView
+        android:padding="3dip"
+        android:text="标题三" />
+
+      <TextView
+        android:gravity="right"
+        android:padding="3dip"
+        android:text="标题四" />
+
+    </TableRow>
+
+  </TableLayout>
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="16dp"
+    android:layout_margin="8dp"
+    android:background="#CCCCCC" />
+
+  <TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/Violet"
+    android:stretchColumns="1">
+
+    <TableRow>
+
+      <TextView
+        android:layout_column="1"
+        android:padding="3dip"
+        android:text="Open..." />
+
+      <TextView
+        android:gravity="right"
+        android:padding="3dip"
+        android:text="Ctrl-O" />
+
+    </TableRow>
+
+    <TableRow>
+
+      <TextView
+        android:layout_column="1"
+        android:padding="3dip"
+        android:text="Save..." />
+
+      <TextView
+        android:gravity="right"
+        android:padding="3dip"
+        android:text="Ctrl-S" />
+
+    </TableRow>
+
+    <TableRow>
+
+      <TextView
+        android:layout_column="1"
+        android:padding="3dip"
+        android:text="Save As..." />
+
+      <TextView
+        android:gravity="right"
+        android:padding="3dip"
+        android:text="Ctrl-Shift-S" />
+
+    </TableRow>
+
+    <View
+      android:layout_height="2dip"
+      android:background="#FF909090" />
+
+    <TableRow>
+
+      <TextView
+        android:padding="3dip"
+        android:text="X" />
+
+      <TextView
+        android:padding="3dip"
+        android:text="Import..." />
+
+    </TableRow>
+
+    <TableRow>
+
+      <TextView
+        android:padding="3dip"
+        android:text="X" />
+
+      <TextView
+        android:padding="3dip"
+        android:text="Export..." />
+
+      <TextView
+        android:gravity="right"
+        android:padding="3dip"
+        android:text="Ctrl-E" />
+
+    </TableRow>
+
+    <View
+      android:layout_height="2dip"
+      android:background="#FF909090" />
+
+    <TableRow>
+
+      <TextView
+        android:layout_column="1"
+        android:padding="3dip"
+        android:text="Quit" />
+
+    </TableRow>
+
+  </TableLayout>
+
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="16dp"
+    android:layout_margin="8dp"
+    android:background="#CCCCCC" />
+
+
+  <TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/Violet"
+    android:stretchColumns="*">
+
+    <TableRow>
+
+      <TextView
+        android:layout_span="4"
+        android:gravity="center"
+        android:text="功能与特效" />
+
+      <TextView
+        android:layout_span="1"
+        android:gravity="center"
+        android:text="注册用户" />
+
+      <TextView
+        android:layout_span="1"
+        android:gravity="center"
+        android:text="普通会员" />
+
+      <TextView
+        android:layout_span="1"
+        android:gravity="center"
+        android:text="PLUS会员" />
+
+    </TableRow>
+
+  </TableLayout>
+
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="16dp"
+    android:layout_margin="8dp"
+    android:background="#CCCCCC" />
+
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@drawable/shape_vip_table_gray"
+    android:orientation="horizontal">
+
+    <TextView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1.8"
+      android:background="@drawable/shape_vip_table_gray"
+      android:gravity="center"
+      android:text="比例一" />
+
+    <TextView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:background="@drawable/shape_vip_table_gray"
+      android:gravity="center"
+      android:text="比例二" />
+
+    <TextView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:background="@drawable/shape_vip_table_gray"
+      android:gravity="center"
+      android:text="比例三" />
+
+    <TextView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:background="@drawable/shape_vip_table_gray"
+      android:gravity="center"
+      android:text="比例四" />
+
+
+  </LinearLayout>
+
+
+</LinearLayout>
