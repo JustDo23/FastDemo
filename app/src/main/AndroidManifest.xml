@@ -94,6 +94,9 @@
       </intent-filter>
     </receiver>
 
+    <activity android:name=".module.widget.LayoutTagActivity" />
+    <activity android:name=".module.table.TableLayoutOneActivity" />
+    <activity android:name=".module.view.LinearGradientActivity"></activity>
   </application>
 
 </manifest>

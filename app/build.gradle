@@ -59,4 +59,6 @@ dependencies {
 
   compile 'se.emilsjolander:stickylistheaders:2.7.0'// 列表头吸附顶部
 
+  compile 'com.github.romainguy:ViewServer:-SNAPSHOT'// View Hierarchy
+
 }

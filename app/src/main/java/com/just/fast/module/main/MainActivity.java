@@ -24,9 +24,11 @@ import com.just.fast.module.file.PicToExternalStorageActivity;
 import com.just.fast.module.launch.StartFromBrowserActivity;
 import com.just.fast.module.media.SurfaceMediaActivity;
 import com.just.fast.module.recorder.MediaRecorderAudioActivity;
+import com.just.fast.module.table.TableLayoutOneActivity;
 import com.just.fast.module.vector.VectorActivity;
 import com.just.fast.module.vector.VectorAnimActivity;
 import com.just.fast.module.vector.VectorDrawActivity;
+import com.just.fast.module.view.LinearGradientActivity;
 import com.just.fast.module.vlayout.VirtualLayoutActivity;
 import com.just.fast.module.widget.EmptyRecyclerViewActivity;
 import com.just.fast.module.widget.ViewStubActivity;
@@ -84,6 +86,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     titleList.add("Library");
     titleList.add("意图");
     titleList.add("控件");
+    titleList.add("布局");
   }
 
   /**
@@ -113,6 +116,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     contentMap.put(4, contentList04);
     List<String> contentList05 = new ArrayList<>();
     contentList05.add("官方简单自定义布局");
+    contentList05.add("自定义线性渐变");
     contentMap.put(5, contentList05);
     List<String> contentList06 = new ArrayList<>();
     contentList06.add("官方简单录音");
@@ -140,6 +144,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     contentList12.add("RecyclerView 为空控件");
     contentList12.add("ViewStub");
     contentMap.put(12, contentList12);
+    List<String> contentList13 = new ArrayList<>();
+    contentList13.add("表格布局");
+    contentMap.put(13, contentList13);
   }
 
   @Override
@@ -182,6 +189,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
       case "官方简单自定义布局":
         startActivity(new Intent(this, CustomLayoutActivity.class));
         break;
+      case "自定义线性渐变":
+        startActivity(new Intent(this, LinearGradientActivity.class));
+        break;
       case "官方简单录音":
         startActivity(new Intent(this, MediaRecorderAudioActivity.class));
         break;
@@ -217,6 +227,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         break;
       case "ViewStub":
         startActivity(new Intent(this, ViewStubActivity.class));
+        break;
+      case "表格布局":
+        startActivity(new Intent(this, TableLayoutOneActivity.class));
         break;
     }
   }
