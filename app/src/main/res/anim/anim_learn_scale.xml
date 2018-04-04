@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scale xmlns:android="http://schemas.android.com/apk/res/android"
+  android:duration="4000"
+  android:fromXScale="0.5"
+  android:fromYScale="0.5"
+  android:pivotX="50%"
+  android:pivotY="3%p"
+  android:toXScale="4.0"
+  android:toYScale="4.0" />
+
+  <!--
+      缩放动画
+   [fromXScale]:指定[起始位置]相对自身的比例[浮点值]
+   [toXScale]:指定[结束位置]相对自身的比例[浮点值]
+   [pivotX]:指定[缩放中心点]位置[数值][百分数][百分数p]
+          [数值]:缩放中心为控件左上角+数值
+          [百分数]:缩放中心为控件左上角+控件宽高*百分数
+          [百分数p]:缩放中心为控件左上角+控件父布局宽高*百分数
+  -->
+
+  <!--
+      通用属性
+   [duration]:动画执行时间[毫秒]
+   [fillAfter]:设置[true]则动画结束时[保持最终状态]
+   [fillBefore]:设置[true]则动画结束时[还原为初始化状态]
+   [repeatCount]:动画重复执行次数[整数]
+   [repeatMode]:重复类型[reverse表示倒序回放][restart表示重新开始]
+   [interpolator]:设置插值器
+  -->

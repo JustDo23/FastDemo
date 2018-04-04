@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.TextView;
 
 import com.just.fast.R;
+import com.just.fast.module.animation.AnimationLearnActivity;
 import com.just.fast.module.calendar.CalendarActivity;
 import com.just.fast.module.calendar.LoadersActivity;
 import com.just.fast.module.calendar.OfficialCalendarActivity;
@@ -87,6 +88,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     titleList.add("意图");
     titleList.add("控件");
     titleList.add("布局");
+    titleList.add("动画");
   }
 
   /**
@@ -147,6 +149,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     List<String> contentList13 = new ArrayList<>();
     contentList13.add("表格布局");
     contentMap.put(13, contentList13);
+    List<String> contentList14 = new ArrayList<>();
+    contentList14.add("动画入门");
+    contentMap.put(14, contentList14);
   }
 
   @Override
@@ -230,6 +235,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         break;
       case "表格布局":
         startActivity(new Intent(this, TableLayoutOneActivity.class));
+        break;
+      case "动画入门":
+        startActivity(new Intent(this, AnimationLearnActivity.class));
         break;
     }
   }
