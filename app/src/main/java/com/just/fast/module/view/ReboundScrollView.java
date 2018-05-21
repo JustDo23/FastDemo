@@ -25,6 +25,7 @@ public class ReboundScrollView extends ScrollView {
   private boolean canPullDown;// 顶部向下拉
   private boolean canPullUp;// 底部向上拉
   private boolean isMoved;// 是否移动了布局
+  private int deltaY;// 滑动距离可判断方向
   private static final float MOVE_FACTOR = 0.5f;// 运动因子延时效果
   private static final int ANIMATION_TIME = 300;// 动画时间
 
@@ -71,9 +72,7 @@ public class ReboundScrollView extends ScrollView {
     if (contentView != null) {
       boolean isTouchOutOfScrollView = event.getY() >= this.getHeight() || event.getY() <= 0;// 是否移出了 ScrollView
       if (isTouchOutOfScrollView) {// contentView 移出了 ScrollView
-        if (isMoved) {
-          boundBack();
-        }
+        boundBack();
         return true;// 消费
       }
       switch (event.getAction()) {
@@ -91,7 +90,7 @@ public class ReboundScrollView extends ScrollView {
             startY = event.getY();
             break;
           }
-          int deltaY = (int) (event.getY() - startY);// 差值
+          deltaY = (int) (event.getY() - startY);// 差值
           // 是否应该移动布局
           boolean shouldMove =
               (canPullDown && deltaY > 0)// 可下拉并且手势向下
@@ -117,7 +116,7 @@ public class ReboundScrollView extends ScrollView {
    * 判断是否在顶部并可以向下拉超界
    */
   private boolean isCanPullDown() {
-    return getScrollY() == 0 || contentView.getHeight() < getHeight() + getScrollY();
+    return getScrollY() <= 0;
   }
 
   /**
@@ -131,12 +130,16 @@ public class ReboundScrollView extends ScrollView {
    * 回弹至原来位置
    */
   private void boundBack() {
+    LogUtils.e("canPullDown = " + canPullDown);
+    LogUtils.e("canPullUp = " + canPullUp);
     if (!isMoved) {// 没有移动布局则跳过
       return;
     }
     // 开始动画
     TranslateAnimation translateAnimation = new TranslateAnimation(0, 0, contentView.getTop(), originalRect.top);
     translateAnimation.setDuration(ANIMATION_TIME);
+    final boolean isPullUp = deltaY < 0;
+    LogUtils.e("isPullUp = " + isPullUp);
     translateAnimation.setAnimationListener(new Animation.AnimationListener() {
 
       @Override
@@ -147,7 +150,7 @@ public class ReboundScrollView extends ScrollView {
       @Override
       public void onAnimationEnd(Animation animation) {
         if (onReboundFinishListener != null) {
-          onReboundFinishListener.onReboundFinish(true);
+          onReboundFinishListener.onReboundFinish(isPullUp);
         }
       }
 
@@ -173,6 +176,11 @@ public class ReboundScrollView extends ScrollView {
    */
   public interface OnReboundFinishListener {
 
+    /**
+     * 反弹结束
+     *
+     * @param isPullUp [true]向上拉[false]向下拉
+     */
     void onReboundFinish(boolean isPullUp);
 
   }
