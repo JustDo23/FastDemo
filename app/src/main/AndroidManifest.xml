@@ -99,8 +99,9 @@
     <activity android:name=".module.view.LinearGradientActivity" />
     <activity android:name=".module.animation.AnimationLearnActivity" />
     <!-- 约束布局 -->
-    <activity android:name=".module.layout.ConstraintLayoutActivity"/>
-
+    <activity android:name=".module.layout.ConstraintLayoutActivity" />
+    <!-- 回弹 ScrollView -->
+    <activity android:name=".module.view.ReboundScrollViewActivity" />
   </application>
 
 </manifest>

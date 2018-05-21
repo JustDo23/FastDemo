@@ -31,6 +31,7 @@ import com.just.fast.module.vector.VectorActivity;
 import com.just.fast.module.vector.VectorAnimActivity;
 import com.just.fast.module.vector.VectorDrawActivity;
 import com.just.fast.module.view.LinearGradientActivity;
+import com.just.fast.module.view.ReboundScrollViewActivity;
 import com.just.fast.module.vlayout.VirtualLayoutActivity;
 import com.just.fast.module.widget.EmptyRecyclerViewActivity;
 import com.just.fast.module.widget.ViewStubActivity;
@@ -120,6 +121,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     List<String> contentList05 = new ArrayList<>();
     contentList05.add("官方简单自定义布局");
     contentList05.add("自定义线性渐变");
+    contentList05.add("回弹 ScrollView");
     contentMap.put(5, contentList05);
     List<String> contentList06 = new ArrayList<>();
     contentList06.add("官方简单录音");
@@ -198,6 +200,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         break;
       case "自定义线性渐变":
         startActivity(new Intent(this, LinearGradientActivity.class));
+        break;
+      case "回弹 ScrollView":
+        startActivity(new Intent(this, ReboundScrollViewActivity.class));
         break;
       case "官方简单录音":
         startActivity(new Intent(this, MediaRecorderAudioActivity.class));
