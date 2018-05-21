@@ -98,6 +98,8 @@
     <activity android:name=".module.table.TableLayoutOneActivity" />
     <activity android:name=".module.view.LinearGradientActivity" />
     <activity android:name=".module.animation.AnimationLearnActivity" />
+    <!-- 约束布局 -->
+    <activity android:name=".module.layout.ConstraintLayoutActivity"/>
 
   </application>
 

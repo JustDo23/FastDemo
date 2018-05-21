@@ -61,4 +61,5 @@ dependencies {
 
   compile 'com.github.romainguy:ViewServer:-SNAPSHOT'// View Hierarchy
 
+  compile 'com.android.support.constraint:constraint-layout:1.0.2'// 约束布局
 }

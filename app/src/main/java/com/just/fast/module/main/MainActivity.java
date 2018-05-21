@@ -23,6 +23,7 @@ import com.just.fast.module.file.FileInternalActivity;
 import com.just.fast.module.file.MonitorExternalStorageActivity;
 import com.just.fast.module.file.PicToExternalStorageActivity;
 import com.just.fast.module.launch.StartFromBrowserActivity;
+import com.just.fast.module.layout.ConstraintLayoutActivity;
 import com.just.fast.module.media.SurfaceMediaActivity;
 import com.just.fast.module.recorder.MediaRecorderAudioActivity;
 import com.just.fast.module.table.TableLayoutOneActivity;
@@ -148,6 +149,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     contentMap.put(12, contentList12);
     List<String> contentList13 = new ArrayList<>();
     contentList13.add("表格布局");
+    contentList13.add("约束布局");
     contentMap.put(13, contentList13);
     List<String> contentList14 = new ArrayList<>();
     contentList14.add("动画入门");
@@ -235,6 +237,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         break;
       case "表格布局":
         startActivity(new Intent(this, TableLayoutOneActivity.class));
+        break;
+      case "约束布局":
+        startActivity(new Intent(this, ConstraintLayoutActivity.class));
         break;
       case "动画入门":
         startActivity(new Intent(this, AnimationLearnActivity.class));
