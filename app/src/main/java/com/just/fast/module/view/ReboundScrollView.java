@@ -138,7 +138,7 @@ public class ReboundScrollView extends ScrollView {
     // 开始动画
     TranslateAnimation translateAnimation = new TranslateAnimation(0, 0, contentView.getTop(), originalRect.top);
     translateAnimation.setDuration(ANIMATION_TIME);
-    final boolean isPullUp = deltaY < 0;
+    final boolean isPullUp = isCanPullUp() && deltaY < 0;
     LogUtils.e("isPullUp = " + isPullUp);
     translateAnimation.setAnimationListener(new Animation.AnimationListener() {
 
